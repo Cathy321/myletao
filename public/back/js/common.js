@@ -1,3 +1,23 @@
+//判断用户是否登录, 实现登录拦截
+//若已登录,就继续访问
+//未登录,拦截到登录页面
+if (location.href.indexOf('login.html') === -1) {
+  //如果不是登录页, 则进行登录拦截判断
+  $.ajax({
+    type: 'get',
+    url: '/employee/checkRootLogin',
+    dataType: 'json',
+    success: function(info) {
+      if(info.success) {
+        console.log('已登录');
+      }
+      if(info.error === 400) {
+        location.href = 'login.html';
+      }
+    }
+  })
+}
+
 //1-进度条功能
 //在发送第一个ajax请求时, 开启进度条
 $(document).ajaxStart(function() {
