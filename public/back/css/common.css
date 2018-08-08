@@ -127,3 +127,8 @@ a:active {
   font-size: 18px;
   color: #fff;
 }
+.lt-main #echarts-1,
+.lt-main #echarts-2 {
+  width: 630px;
+  height: 400px;
+}
