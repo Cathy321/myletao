@@ -129,6 +129,6 @@ a:active {
 }
 .lt-main #echarts-1,
 .lt-main #echarts-2 {
-  width: 630px;
+  width: 48%;
   height: 400px;
 }
