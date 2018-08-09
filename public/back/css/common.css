@@ -31,6 +31,9 @@ a:active {
 .mt-20 {
   margin-top: 20px;
 }
+.mb-20 {
+  margin-bottom: 20px;
+}
 
 /* 后台管理首页 */
 .lt-layout {
