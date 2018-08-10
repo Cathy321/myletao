@@ -1,0 +1,137 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.body-bg {
+  background-color: #222D32;
+}
+.red {
+  color: #A94442;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.panel .panel-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.lt-layout {
+  padding-left: 180px;
+  padding-top: 50px;
+  transition: all 1s;
+}
+.lt-layout.hidemenu {
+  padding-left: 0;
+}
+.lt-aside {
+  background-color: #222D32;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 180px;
+  height: 100%;
+  transition: all 1s;
+}
+.lt-aside.hidemenu {
+  left: -180px;
+}
+.lt-aside .brand {
+  width: 180px;
+  height: 50px;
+  background: #367FA9;
+  text-align: center;
+}
+.lt-aside .brand a {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  line-height: 50px;
+}
+.lt-aside .user {
+  width: 180px;
+  height: 180px;
+  padding-top: 30px;
+}
+.lt-aside .user img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.lt-aside .user p {
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+}
+.lt-aside .nav a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+}
+.lt-aside .nav a.current {
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+.lt-aside .nav a span {
+  padding-left: 5px;
+}
+.lt-aside .nav .child a {
+  padding-left: 60px;
+}
+.lt-main .lt-topbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding-left: 180px;
+  background-color: #3C8DBC;
+  transition: all 1s;
+}
+.lt-topbar.hidemenu {
+  padding-left: 0;
+}
+.lt-topbar .icon-menu,
+.lt-topbar .icon-logout {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.echarts-1, .echarts-2 {
+  width: 48%;
+  height: 400px;
+}
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
