@@ -1,20 +1,4 @@
-.lt-search {
-  padding: 10px;
-  position: relative;
-}
-.lt-search .search-input {
-  margin: 0;
-  height: 34px;
-  border-radius: 5px;
-  font-size: 12px;
-  border: 1px solid #007AFF;
-}
-.lt-search .search-btn {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  border-radius: 0 5px 5px 0;
-}
+
 
 /* 搜索历史 */
 .lt-history {

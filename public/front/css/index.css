@@ -9,31 +9,4 @@
   display: block;
 }
 
-.lt-product {
-  padding: 10px;
-}
-.lt-product-item {
-  width: 48%;
-  border: 1px solid #ccc;
-  padding: 10px;
-  float: left;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.lt-product-item:nth-child(odd) {
-  margin-right: 4%;
-}
-.lt-product-item a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.lt-product-item .info {
-  text-align: left;
-}
-.lt-product-item .price {
-  color: red;
-}
-.lt-product-item .oldPrice {
-  text-decoration: line-through;
-}
+
