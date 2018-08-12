@@ -73,4 +73,38 @@ $(function() {
     })
   })
 
+  //功能4: 点击搜索按钮, 获取搜索框的值, 添加到历史记录的最前面
+  $('.search-btn').click(function() {
+    var value = $('.search-input').val();
+    //判断搜索框是否输入了有效内容
+    if(value.trim() === '') {
+      mui.toast("请输入搜索关键字", {
+        duration: 2000
+      });
+      return;
+    }
+    //获取数组
+    var arr = getHistory();
+    //需求: 
+      //1-不能有重复项,如果有, 移除之前的
+    var index = arr.indexOf(value);
+    if(index > -1) {
+      arr.splice(index, 1);
+    }
+      //2-数组长度控制在10以内
+    if(arr.length >= 10) {
+      arr.pop();
+    }
+    arr.unshift(value);
+    //转成json字符串, 存入本地存储
+    var jsonStr = JSON.stringify(arr);
+    localStorage.setItem("search-list", jsonStr);
+    //重新渲染
+    render();
+    //清空搜索框
+    $('.search-input').val('');
+    //搜索完成, 跳转到搜索列表, 并将搜索关键字传递过去
+    location.href = "searchList.html?key=" + value;
+  })
+
 })
