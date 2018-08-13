@@ -79,7 +79,7 @@ $(function() {
     //判断搜索框是否输入了有效内容
     if(value.trim() === '') {
       mui.toast("请输入搜索关键字", {
-        duration: 2000
+        duration: 2000 //提示信息的持续显示时间
       });
       return;
     }
