@@ -145,3 +145,19 @@ img {
 .lt-product-item .oldPrice {
   text-decoration: line-through;
 }
+
+/* 公共尺码 */
+.lt-size span {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  margin: 3px 0;
+  border: 1px solid #ccc;
+}
+.lt-size span.current {
+  background: orange;
+  color: #fff;
+}
